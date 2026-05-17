@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(11, 11, 11);
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("./assets/aa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+
+    opacity: 0.4;
+
+    z-index: -1;
+}
